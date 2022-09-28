@@ -5,23 +5,30 @@
 // Let user confirm if they want to play again after seeing the results. 
 // If user win, document in data. If user lose, note in data. If tie, document data. Increase all by one if the character match. 
 
-
-var userinput 
-
-function game(){
+/*function game() {
     var uu = userinput();
     var data = document.querySelector("#RPS");
-}
+}*/
 
-function userinput(){
-    var user = window.prompt ("PICK R, P, or S");
-    var uresult = Array ("r", "p", "s");
-    if (this.user == uresult){
-        alert ("You pick " + this.uresult);
+function userInput() {
+    var userPrompt = prompt ("PICK R, P, or S!");
+    var userResult = ["R", "P", "S"]
+    if (userPrompt == userResult[0]){
+        alert ("You picked " + userPrompt + "!");
+    }
+    else if (userPrompt == userResult[1]){
+        alert ("You picked " + userPrompt + "!");
+    }
+    else if (userPrompt == userResult[2]){
+        alert ("You picked " + userPrompt + "!");
     }
     else {
-        alert ("Not a valid choice.");
+        alert ("You didn't pick a valid choice!")
     }
-    }
-   
-    userinput();
+}
+
+function computerInput() {
+    var computerPrompt = 
+}
+
+userInput();
